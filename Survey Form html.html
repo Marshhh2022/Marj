@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title> Survey Form </title>
+  </head>
+  <body>
+    <h1 id="title"> Marsh Survey Form</h1>
+    <p id="description"> PLEASE FILL UP</p>
+
+    <form id="survey-form"> 
+
+      <label id="name-label" >Enter your name: <input required placeholder="name" id="name" type="text" /></label>
+
+      <label  id="email-label">Enter your email: <input required id="email" placeholder="email" type="email" /> </label>
+
+      <label id="number-label"> Enter your age: <input id="number" placeholder="number" type="number" min="0" max="101" /> </label>
+
+<label id="gender-label"> Gender : <input id="gender" placeholder="gender" type="number" min="0" max="101" /> </label>
+      <select id="dropdown">
+        <option value="">I like</option>        
+        <option value="1">I do not like</option>
+      </select>  
+      <input value="1" name="radio1" type="radio" />
+      <input value="2" name="radio1" type="radio" />
+
+      <input  value="terms-and-conditions" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      <input value="spam-email" id="spam-email" type="checkbox" required name="spam-email" class="inline" /> I accept to be given <a href="https://www.freecodecamp.org/news/terms-of-service/">spam emails.</a>
+
+      <textarea> </textarea>
+      <input id="submit" type="submit" />
+    </form>
+
+  </body>  
+</html>
